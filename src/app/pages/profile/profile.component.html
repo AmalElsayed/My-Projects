@@ -1,0 +1,12 @@
+
+<div *ngIf="user">
+  <form>
+    <div>
+      <label for="username">User Name:</label>
+      <input type="text" id="username" [value]="user.username" readonly>
+    </div>
+    </form>
+</div>
+<div *ngIf="!user">
+  <p>Loading profile data...</p>
+</div>
